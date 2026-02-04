@@ -1,0 +1,173 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*  Apply a natural box layout model to all elements  */
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+} // end all elements
+
+#headerWrapper {
+   span {color: #7c1d47;}
+}
+/* --------------------------- BODY --------------------------- */
+body {
+  font-family: "Glass Antiqua", cursive;
+  font-weight: 700;
+  font-style: normal;
+  min-width: 320px;
+
+  h1 {
+    padding: 1rem $gutter .5rem $gutter;
+    font-size: 3.5rem;
+    color: $secondaryColor;
+    font-weight: $lightWeight;
+  }
+  #mainWrapper main h1 {
+  flex: 0 0 100%;
+}
+
+
+  p {
+    padding: .5rem $gutter;
+    color: #333;
+    line-height: $leading;
+  }
+
+ 
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  h2 {
+    width: 100%;
+    font-size: 2.5rem;
+    color: $primaryColor;
+    margin: 0;
+    text-align: center;
+  }
+
+  h3 {
+    width: 100%;
+    font-size: 1.5rem;
+    color: $secondaryColor;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+#mainWrapper {
+  border: 4px ;
+  margin: 1rem 2vw;
+}
+
+#mainWrapper main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+#mainWrapper main > div {
+  flex: 1 1 250px;
+  border: 2px solid #7c1d47;
+  background-color: #f9e6ef;
+  padding: 1rem;
+}
+
+
+/* --------------------------- HEADER --------------------------- */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; // space between logo and title
+}
+
+.phone {
+  font-size: 1.25rem;
+}
+ // end header
+
+
+/* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
+
+#navWrapper {
+      background-color: $primaryColor;
+} // end nav wrapper
+
+nav {
+
+  ul { 
+    padding: 0;
+    margin: 0 $gutter;
+  }
+
+  ul li {
+    list-style-type: none;
+    
+   }
+
+  ul li a {
+      display: block;
+      padding: .8rem $gutter;
+      color: $greyColor;
+      text-decoration: none;
+      
+    } 
+
+   ul li.active a {
+      background-color: rgba(255, 255, 255, 0.8);
+      color: $primaryColor;
+      border-radius: 10px;
+   }
+
+   a:hover {
+  color: $secondaryColor;
+   }
+}
+
+
+
+
+// end nav
+
+
+
+
+
+
+
+
+
+
+/* --------------------------- MAIN --------------------------- */
+
+
+
+/* --------------------------- FOOTER --------------------------- */
+#footerWrapper {
+    background-color: $primaryColor;
+    
+} // end footer wrapper
+
+footer {
+    font-size: .85rem;
+    padding: 1rem $gutter;
+    text-align: center;
+    line-height: $leading;
+    a {color: $secondaryColor;}
+      p {
+    color: #f9e6ef;
+  }
+}// end footer

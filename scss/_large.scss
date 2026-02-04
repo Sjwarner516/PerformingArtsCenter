@@ -1,0 +1,9 @@
+@media (min-width: 1024px) {
+  #mainWrapper main > div {
+    flex: 0 0 31%;
+  }
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+}

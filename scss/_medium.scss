@@ -1,0 +1,14 @@
+/* NAVIGATION STUFF GOES HERE  */
+ // Medium screens: 2 columns
+
+
+@media (min-width: 600px) {
+  #mainWrapper main > div {
+    flex: 0 0 48%;
+  }
+
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
